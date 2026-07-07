@@ -21,6 +21,7 @@ x-n8n: &service-n8n
     - N8N_ENCRYPTION_KEY
     - N8N_USER_MANAGEMENT_JWT_SECRET
     - OLLAMA_HOST=${OLLAMA_HOST:-ollama:11434}
+    - N8N_SECURE_COOKIE=false
 #    - WEBHOOK_URL=https://jaimie-cordate-queasily.ngrok-free.dev
   env_file:
     - path: .env
